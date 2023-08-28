@@ -1,0 +1,1 @@
+{"version":3,"file":"p-svg.interface.js","sourceRoot":"","sources":["../../../../src/components/particles/p-svg/p-svg.interface.ts"],"names":[],"mappings":"","sourcesContent":["export interface propsIcon {\r\n    name: string;\r\n    width: string;\r\n    heigth: string;\r\n    viewbox: string;\r\n    fill: string;\r\n}"]}

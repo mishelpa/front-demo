@@ -1,0 +1,15 @@
+:host .PIconSvg {
+  outline: none;
+  width: 24px;
+  height: 24px;
+}
+:host .PIconSvg svg {
+  vertical-align: middle;
+  margin-bottom: 5px;
+}
+:host .lightgray {
+  color: #C1C7D4;
+}
+:host .pointer {
+  cursor: pointer;
+}

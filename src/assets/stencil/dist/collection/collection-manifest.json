@@ -1,0 +1,19 @@
+{
+  "entries": [
+    "components/atoms/p-button/p-button.js",
+    "components/atoms/p-input/p-input.js",
+    "components/atoms/p-paginator/p-paginator.js",
+    "components/molecules/p-modal/p-modal.js",
+    "components/molecules/p-table/p-table.js",
+    "components/my-component/my-component.js",
+    "components/particles/p-font/p-font.js",
+    "components/particles/p-svg/p-svg.js"
+  ],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "4.1.0",
+    "typescriptVersion": "5.0.4"
+  },
+  "collections": [],
+  "bundles": []
+}

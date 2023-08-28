@@ -1,0 +1,10 @@
+export type ThemeColor = 'primary' | 'secondary' | 'tertiary' | 'action' | 'danger' | 'dark' | 'none' | 'green' | 'blue1';
+export type Size = 'normal' | 'sm' | 'md' | 'field-md';
+export type Type = 'text' | 'number' | 'password' | "email" | "date" | "masked";
+export type IconType = 'linear' | 'medium' | 'alert' | 'full';
+export type Color = 'none' | 'white' | 'black' | 'green' | 'gray' | 'error' | 'mediumdarkgray' | 'mediumdarkgray2' | 'red' | 'primary' | 'primary-hover' | 'secondary' | 'secondary-hover' | 'purple' | 'darkblue' | 'blue' | 'aqua' | 'lightgray' | 'extra-lightgray' | 'alert-green' | 'brown' | 'current' | 'green1';
+export type ButtonType = 'default' | 'full' | 'icon';
+export type TypeErrors = 'success' | 'error' | 'warning';
+export type Measures = 'px' | '%' | 'rem';
+export type FontType = 'hero' | 'section' | 'name' | 'name-regular' | 'card' | 'input' | 'input-regular' | 'notification' | 'alert' | 'label' | 'menu' | 'info' | 'legal' | 'button_md' | 'button_sm' | 'paragraph' | 'paragraph_todter' | 'subheader-cell-table' | 'cell-table' | 'card-title' | 'card-subtitle' | 'child-card-link' | 'label-bold';
+export type FontWeight = 'light' | 'bold' | 'default';

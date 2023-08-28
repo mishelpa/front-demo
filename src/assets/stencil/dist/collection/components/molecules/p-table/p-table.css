@@ -1,0 +1,39 @@
+:host {
+  display: block;
+  line-height: 18px;
+  font-family: "Prelo";
+}
+:host .container {
+  border: 1px solid #eee;
+  border-radius: 2px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+}
+:host cdn-paginator {
+  margin-top: 8px;
+}
+:host table {
+  width: 100%;
+}
+:host table thead {
+  border-radius: 8px 8px 0px 0px;
+}
+:host table th, :host table td {
+  text-align: left;
+  padding: 4px;
+  height: 35px;
+  color: #0F265C;
+  font-size: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+:host table th {
+  font-weight: 700;
+  border-bottom: 1px solid #DEE3ED;
+}
+:host table tr:hover {
+  background-color: #F4F6F9;
+}
+:host table td {
+  font-weight: 500;
+}

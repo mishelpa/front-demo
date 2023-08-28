@@ -1,0 +1,19 @@
+.container-bar {
+  padding-top: 60px;
+  color: #ffffff;
+  .container-elements {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    .bar_span_name {
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    .bar_span_job {
+      font-weight: 500;
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+<div class="container container-products">
+  <p class="p_title">Productos</p>
+  <div class="card-buttons d-flex">
+    <form>
+      <p class="form-title">Buscar por nombre</p>
+      <div class="form-body d-flex">
+        <div class="input-search d-flex">
+          <img src="assets/img/search.svg" alt="" />
+          <input type="text" [formControl]="productName" placeholder="Buscar" />
+        </div>
+        <p-button
+          text="Buscar"
+          color="secondary"
+          size="normal"
+          (click)="search()"
+        ></p-button>
+      </div>
+    </form>
+    <div class="button-export d-flex">
+      <p-button
+        text="Exportar en PDF"
+        color="primary"
+        size="normal"
+        (click)="exportPDF()"
+      ></p-button>
+      <p-button
+        text="Exportar en Excel"
+        color="tertiary"
+        size="normal"
+        (click)="exportExcel()"
+      ></p-button>
+    </div>
+  </div>
+  <div id="pdfTable" #pdfTable>
+    <p-table
+      id="table"
+      (pageChanged)="eventPage($event)"
+      (buttonClicked)="openModal($event)"
+      [pagination]="pagination"
+      [items]="products"
+      [headers]="headers"
+      [itemCount]="itemCount"
+      [action]="true"
+    >
+    </p-table>
+    <p-modal
+      id="modal"
+      #modal
+      header="Detalle de producto"
+      textButton="Entendido"
+    >
+      <div class="modal-body">
+        <p class="modal-body-title">
+          <span>Producto: </span>
+          <span>{{ product.title }}</span>
+        </p>
+        <p class="modal-body-price">
+          <span>Precio: </span>
+          <span>{{ product.price }}</span>
+        </p>
+        <div class="modal-body-img d-flex">
+          <img [src]="product.thumbnail" alt="imagen del producto" />
+        </div>
+      </div>
+    </p-modal>
+  </div>
+</div>

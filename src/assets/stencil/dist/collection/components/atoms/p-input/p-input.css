@@ -1,0 +1,54 @@
+:host * {
+  box-sizing: border-box;
+  font-family: "Prelo";
+  font-size: 14px;
+}
+:host .PInput {
+  position: relative;
+}
+:host .PInput .input {
+  width: 100%;
+  padding: 10px 14px;
+  height: 48px;
+  color: #6F7D9D;
+  border: 1px solid #929292;
+  border-radius: 4px;
+  outline: none;
+}
+:host .PInput .input:disabled, :host .PInput .input input:disabled:hover {
+  background-color: #EAE9EF;
+  border: 1px solid #EAE9EF;
+  font-weight: 500;
+  color: #919CB1;
+  cursor: auto;
+}
+:host .PInput .input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #6F7D9D;
+  font-size: 14px;
+  font-weight: 400;
+}
+:host .PInput .icon {
+  position: absolute;
+  right: 16px;
+  top: 12px;
+}
+:host .PInput .lock {
+  background-color: #EDEFF2;
+  border: none;
+  color: #212942;
+  pointer-events: none;
+}
+:host .error-text:not(:disabled).error {
+  border: 1px solid #ff3e38;
+}
+:host .lowercase {
+  text-transform: none !important;
+}
+:host .input:-ms-input-placeholder, :host .input::-ms-input-placeholder {
+  color: #212942;
+  vertical-align: middle;
+}
+:host .input::-ms-input-placeholder {
+  color: #212942;
+}
